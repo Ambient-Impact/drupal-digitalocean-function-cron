@@ -10,7 +10,7 @@ declare(strict_types=1);
  * @throws \UnexpectedValueException If the "CRON_URL" environment variable is
  *   not set or is an empty string.
  */
-function main(array $args): array {
+function main(): array {
 
   /** @var string|false */
   $url = \getenv('CRON_URL');
