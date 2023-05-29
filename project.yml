@@ -1,0 +1,18 @@
+packages:
+- name: cron
+  functions:
+  - name: pinger
+    binary: false
+    runtime: 'php:default'
+    web: false
+    limits:
+      # Max execution time in milliseconds.
+      timeout: 5000
+      # Max memory in megabytes.
+      memory: 128
+    triggers:
+    - name: cron
+      sourceType: scheduler
+      sourceDetails:
+        # Every 15 minutes by default. Edit as needed.
+        cron: "*/15 * * * *"
