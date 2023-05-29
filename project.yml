@@ -1,5 +1,10 @@
 packages:
 - name: cron
+  environment:
+    # This is required for the environment variable from the .env file to
+    # actually get deployed. Documentation is unclear as to why, but likely for
+    # security reasons to only explicitly allow known variables.
+    CRON_URL: "${CRON_URL}"
   functions:
   - name: pinger
     binary: false
