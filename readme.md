@@ -6,7 +6,7 @@ triggers](https://docs.digitalocean.com/products/functions/how-to/schedule-funct
 
 The easiest way to deploy this is to [install and configure
 `doctl`](https://docs.digitalocean.com/reference/doctl/how-to/install/). Then,
-checkout this repository. Next, create [a `.env`
+check out this repository. Next, create [a `.env`
 file](https://www.dotenv.org/docs/security/env.html) in the root of the
 repository with the contents:
 
